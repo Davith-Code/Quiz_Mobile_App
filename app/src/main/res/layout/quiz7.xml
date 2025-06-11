@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7/10"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type Answer"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/menu"
+                android:contentDescription="Menu Icon" />
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progress="9"
+                android:max="100"
+                android:progressTint="#4CAF50"
+                android:backgroundTint="#E0E0E0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+
+        <!-- Question Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/project"
+        android:contentDescription="Project Image"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Question Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are the objects in the picture above?"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_marginBottom="18dp" />
+
+    <!-- Answer Options -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <!-- Answer Button 1 -->
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp" />
+
+        <!-- Answer Button 2 -->
+        <Button
+            android:id="@+id/button_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rule"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp" />
+
+        <!-- Answer Button 3 -->
+        <Button
+            android:id="@+id/button_laptop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laptop"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp" />
+
+        <!-- Answer Button 4 -->
+        <Button
+            android:id="@+id/button_scissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scissors"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp" />
+    </LinearLayout>
+    <!-- Submit Button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#2196F3" />
+</LinearLayout>
+</LinearLayout>
