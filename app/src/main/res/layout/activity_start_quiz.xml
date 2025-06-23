@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/start_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="18dp">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/arrowback"
+                android:contentDescription="Back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/menu"
+                android:contentDescription="Menu" />
+        </LinearLayout>
+
+        <!-- Quiz Banner Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDE7F6"
+            android:gravity="center"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:backgroundTint="#EDE7F6"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bear"
+                android:contentDescription="Quiz Banner" />
+        </LinearLayout>
+
+        <!-- Profile Info Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:backgroundTint="#FFFFFF">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/profile2"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"
+                android:background="#E0E0E0" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dory_jenita"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#222222" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Having Fun Always Smile!"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Follow"
+                android:textColor="@color/white"
+                android:background="#ECEAFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invite your friends to play together!"
+            android:textSize="15sp"
+            android:textColor="#443266"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Hidden Content Note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Questions content is hidden by the creator"
+            android:textSize="13sp"
+            android:textColor="#AA88C7"
+            android:background="#F3EFFF"
+            android:padding="10dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/btnPlaySolo"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Play Solo"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="#AB47BC"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btnPlayWithFriends"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Play with Friends"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:background="#7B61FF"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

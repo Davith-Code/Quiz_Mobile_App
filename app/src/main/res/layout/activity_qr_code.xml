@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qr_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/arrowback"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Generate PIN and QR Code"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- QR Code Card -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:src="@drawable/qr_code"
+                android:contentDescription="QR Code"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <!-- PIN (Big and Centered) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 789"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#7B61FF"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.12"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap Code to copy"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Info Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PIN and QR Code are unique and different for each player. You can invite your friends to play quizzes on one server with the code above."
+            android:textSize="15sp"
+            android:textColor="#444"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#9C27B0"
+                android:layout_marginEnd="16dp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"/>
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Share"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#3F51B5"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

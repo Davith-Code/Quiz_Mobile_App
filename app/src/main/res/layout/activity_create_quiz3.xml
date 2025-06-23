@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:padding="16dp"
+    >
+
+    <!-- Top Bar: Close, Title, Options Icon -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <!-- Close Icon -->
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/close"
+            android:contentDescription="Close"
+            app:tint="@android:color/black" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create Quizzo"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- List Icon -->
+        <ImageView
+            android:id="@+id/listIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_list"
+            android:contentDescription="Options"
+            app:tint="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Image CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/quizImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/school_bus"
+            android:contentDescription="Quiz Image" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Time, Points, Quiz Type Buttons -->
+    <LinearLayout
+        android:id="@+id/quizOptionsBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/imageCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 sec"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6A0DAD"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="16dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/pointsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000 pt"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#8A2BE2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:cornerRadius="16dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="130dp" />
+
+        <Spinner
+            android:id="@+id/quizTypeSpinner"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border"
+            android:popupBackground="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Question Input Field -->
+    <EditText
+        android:id="@+id/questionInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:hint="..... do you get to"
+        android:padding="16dp"
+        android:background="@drawable/rounded_border"
+        android:textColorHint="#999999"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/quizOptionsBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Answer Buttons Grid -->
+    <GridLayout
+        android:id="@+id/answerButtonsGrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="24dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/questionInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/answerButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Add answer"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4285F4"
+            app:cornerRadius="16dp"
+            android:minHeight="64dp"
+            android:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/answerButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Add answer"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#EA4335"
+            app:cornerRadius="16dp"
+            android:minHeight="64dp"
+            android:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/answerButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Add answer"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F7BE00"
+            app:cornerRadius="16dp"
+            android:minHeight="64dp"
+            android:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/answerButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Add answer"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#0F9D58"
+            app:cornerRadius="16dp"
+            android:minHeight="64dp"
+            android:layout_rowWeight="1" />
+    </GridLayout>
+
+    <!-- Bottom Bar: Numbered Input and Add Button -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/numberedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="64dp"
+            android:minHeight="48dp"
+            android:hint="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/rounded_border"
+            android:textColorHint="#999999"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/add"
+            android:contentDescription="Add"
+            android:backgroundTint="#6A0DAD"
+            app:tint="@android:color/white"
+            android:background="@drawable/rounded_border"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

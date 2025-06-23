@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:strokeColor="#E5D9FF"
+    app:strokeWidth="1dp"
+    android:backgroundTint="@android:color/white"
+    android:id="@+id/edit_point">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Dialog Title -->
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#2C2151"
+            android:gravity="center"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Points Options Toggle Group -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/pointsToggleGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_marginBottom="18dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn5pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="5 pt"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn10pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="10 pt"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn20pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="20 pt"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="8dp"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Second row of toggle group -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/pointsToggleGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="false"
+            android:layout_marginBottom="18dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn30pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="30 pt"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn45pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="45 pt"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn60pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="60 pt"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="8dp"/>
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- Third row if needed -->
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/pointsToggleGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="false">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn90pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="90 pt"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn120pt"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="120 pt"
+                app:cornerRadius="16dp"
+                android:layout_marginStart="8dp"/>
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <!-- OK Button -->
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="OK"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#7D49FA"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="22dp"
+            android:elevation="4dp"
+            app:cornerRadius="18dp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

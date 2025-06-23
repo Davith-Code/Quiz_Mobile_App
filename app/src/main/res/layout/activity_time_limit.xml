@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:id="@+id/time_limit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Limit"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_gravity="center_horizontal"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_5_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="5 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_10_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="10 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_20_sec_popup"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="20 sec"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#6A0DAD"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_30_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="30 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_45_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="45 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_60_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="60 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_90_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="90 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_120_sec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="120 sec"
+                android:textColor="@android:color/black"
+                android:backgroundTint="#F0F0F0"
+                app:cornerRadius="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="16dp" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6A0DAD"
+            app:cornerRadius="16dp"
+            android:minHeight="0dp"
+            android:paddingVertical="14dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

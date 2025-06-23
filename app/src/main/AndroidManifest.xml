@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
 
     <application
         android:allowBackup="true"
@@ -12,19 +13,126 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/rounded_button_skip" />
-
         <activity
-            android:name=".MainActivity"
+            android:name=".create_quiz_3"
+            android:exported="false" />
+        <activity
+            android:name=".time_limit"
+            android:exported="false" />
+        <activity
+            android:name=".edit_point"
+            android:exported="false" />
+        <activity
+            android:name=".add_image"
+            android:exported="false" />
+        <activity
+            android:name=".create_quiz_2"
+            android:exported="false" />
+        <activity
+            android:name=".add_question"
+            android:exported="false" />
+        <activity
+            android:name=".create_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".quiz10"
+            android:exported="false" />
+        <activity
+            android:name=".quiz9"
+            android:exported="false" />
+        <activity
+            android:name=".quiz8"
+            android:exported="false" />
+        <activity
+            android:name=".quiz7"
+            android:exported="false" />
+        <activity
+            android:name=".quiz6"
+            android:exported="false" />
+        <activity
+            android:name=".quiz5"
+            android:exported="false" />
+        <activity
+            android:name=".quiz4"
+            android:exported="false" />
+        <activity
+            android:name=".quiz3"
+            android:exported="false" />
+        <activity
+            android:name=".quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".qr_code"
+            android:exported="false" />
+        <activity
+            android:name=".invite_and_scan"
+            android:exported="false" />
+        <activity
+            android:name=".start_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".create_account_successful"
+            android:exported="false" />
+        <activity
+            android:name=".create_account_page_2"
+            android:exported="false" />
+        <activity
+            android:name=".create_account_page_1"
+            android:exported="false" />
+        <activity
+            android:name=".library_form"
+            android:exported="false" />
+        <activity
+            android:name=".home_page"
+            android:exported="false" />
+        <activity
+            android:name=".create_form"
+            android:exported="false" />
+        <activity
+            android:name=".change_password_successful"
+            android:exported="false" />
+        <activity
+            android:name=".create_new_password"
+            android:exported="false" />
+        <activity
+            android:name=".forget_password_form2"
+            android:exported="false" />
+        <activity
+            android:name=".forget_password_form"
+            android:exported="false" />
+        <activity
+            android:name=".login_form"
+            android:exported="false" /> <!-- Launcher Activity: Splash Screen -->
+        <activity
+            android:name=".welcome_start"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Welcome Page 1 -->
+        <activity
+            android:name=".welcome_page_1"
+            android:exported="true" /> <!-- Welcome Page 2 -->
+        <activity
+            android:name=".welcome_page_2"
+            android:exported="true" /> <!-- Welcome Page 3 -->
+        <activity
+            android:name=".welcome_page_3"
+            android:exported="true" /> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- Optional metadata -->
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/rounded_button_skip" />
     </application>
 
 </manifest>
